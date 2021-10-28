@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test-hello:
-	python -m pytest -vv test_hello.py
+	python -m pytest -vv --cov=hello test_hello.py
 
 test:
 	python -m pytest -vvv --cov=hello --cov=greeting \
