@@ -2,8 +2,8 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
-test-hello:
-	python -m pytest -vv --cov=hello test_hello.py
+test-initial:
+	python -m pytest -vv --cov=hello --cov=greeting tests
 
 test:
 	python -m pytest -vvv --cov=hello --cov=greeting \
@@ -27,4 +27,4 @@ format:
 lint:
 	pylint --disable=R,C hello.py
 
-all: install lint test-hello format
+all: install lint test-initial format
