@@ -23,7 +23,7 @@ jobs:
           make lint
       - name: Test with pytest
         run: |
-          make test-hello
+          make test-initial
       - name: Format with black
         run: |
           make format
