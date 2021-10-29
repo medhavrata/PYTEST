@@ -20,7 +20,7 @@ one-test:
 
 debugthree:
 	#not working the way I expect
-	python -m pytest -vv --pdb --maxfail=4  # drop to PDB for first three failures
+	python -m pytest -vv --pdb --maxfail=3  # drop to PDB for first three failures
 
 format:
 	black *.py
