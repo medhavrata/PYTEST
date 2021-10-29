@@ -4,6 +4,7 @@ install:
 
 test-initial:
 	python -m pytest -vv --cov=hello --cov=greeting tests
+	python -m pytest --nbval notebook_test.ipynb	#tests our jupyter notebook
 
 test:
 	python -m pytest -vvv --cov=hello --cov=greeting \
