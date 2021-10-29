@@ -1,4 +1,4 @@
 from greeting import my_name
 
 def test_my_name():
-    "my name is: test" == my_name('test')
+    assert "my name is: test" == my_name('test')
